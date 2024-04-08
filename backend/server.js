@@ -1,7 +1,7 @@
 
 const app = require("./app");
 const dotenv = require("dotenv");
-dotenv.config({ path: "./backend/config/.env" })
+dotenv.config({ path: "./config/.env" })
 
 // Handling uncaught Exception
 process.on("uncaughtException", (err) => { 
