@@ -8,7 +8,8 @@ export const getProducts = () => async (dispatch) => {
         dispatch({
             type: ALL_PRODUCT_REQUEST,
         });
-        const { data } = await axios.get("http://localhost:5000/api/create/getproducts");
+        // const { data } = await axios.get("http://localhost:5000/api/create/getproducts");
+        const { data } = await axios.get("https://ecommerce-website-priya.onrender.com/api/create/getproducts");
         // console.log("imdatahello",data);
         dispatch({
             type: ALL_PRODUCT_SUCCESS,
